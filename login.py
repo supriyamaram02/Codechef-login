@@ -7,7 +7,7 @@ class SpiderNameSpider(scrapy.Spider):
     start_urls = ['https://www.codechef.com']
 
     def parse(self, response):
-        data = {'name': 'usernamw','pass': 'password'}
+        data = {'name': 'username','pass': 'password'}
         return scrapy.FormRequest.from_response(response, formdata=data,callback=self.after_login)
         
 
