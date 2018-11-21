@@ -3,6 +3,7 @@ import scrapy
 from scrapy.utils.response import open_in_browser
 
 class SpiderNameSpider(scrapy.Spider):
+    name="login_spider"
     allowed_domains = ['codechef.com']
     start_urls = ['https://www.codechef.com']
 
